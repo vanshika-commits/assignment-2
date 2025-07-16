@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Survey</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    th, td {
+      padding: 10px;
+    }
+    label {
+      margin-right: 20px;
+    }
+    button {
+      margin: 2px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Food Survey Form</h1>
+  <h5>Help us understand your food habits better</h5>
+
+  <form method="POST">
+    <table border="1">
+      <tr>
+        <td><label for="user">Name</label></td>
+        <td><input type="text" name="user" id="user" /></td>
+      </tr>
+      <tr>
+        <td><label for="age">Age</label></td>
+        <td><input type="number" name="age" id="age" /></td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>
+          <input type="radio" name="location" value="urban">Urban
+          <input type="radio" name="location" value="suburban">Suburban
+          <input type="radio" name="location" value="rural">Rural
+        </td>
+      </tr>
+      <tr>
+        <td>You prepare your own meals</td>
+        <td>
+          <input type="radio" name="you_prepare" value="1">1
+          <input type="radio" name="you_prepare" value="2">2
+          <input type="radio" name="you_prepare" value="3">3
+          <input type="radio" name="you_prepare" value="4">4
+          <input type="radio" name="you_prepare" value="5">5
+          <input type="radio" name="you_prepare" value="6">6
+        </td>
+      </tr>
+      <tr>
+        <td>You eat out</td>
+        <td>
+          <input type="radio" name="you_eat_out" value="1">1
+          <input type="radio" name="you_eat_out" value="2">2
+          <input type="radio" name="you_eat_out" value="3">3
+          <input type="radio" name="you_eat_out" value="4">4
+          <input type="radio" name="you_eat_out" value="5">5
+          <input type="radio" name="you_eat_out" value="6">6
+        </td>
+      </tr>
+      <tr>
+        <td>You order food for home</td>
+        <td>
+          <input type="radio" name="you_order_food" value="1">1
+          <input type="radio" name="you_order_food" value="2">2
+          <input type="radio" name="you_order_food" value="3">3
+          <input type="radio" name="you_order_food" value="4">4
+          <input type="radio" name="you_order_food" value="5">5
+          <input type="radio" name="you_order_food" value="6">6
+        </td>
+      </tr>
+      <tr>
+        <td>Food origin preferences</td>
+        <td>
+          <input type="checkbox" name="food_origin_preference" value="Indian">Indian
+          <input type="checkbox" name="food_origin_preference" value="Chinese">Chinese
+          <input type="checkbox" name="food_origin_preference" value="Mexican">Mexican
+          <input type="checkbox" name="food_origin_preference" value="Italian">Italian
+          <input type="checkbox" name="food_origin_preference" value="Thai">Thai
+          <input type="checkbox" name="food_origin_preference" value="Japanese">Japanese
+          <input type="checkbox" name="food_origin_preference" value="Korean">Korean
+          <input type="checkbox" name="food_origin_preference" value="Other">Other
+        </td>
+      </tr>
+      <tr>
+        <td>Would you go vegan?</td>
+        <td>
+          <input type="radio" name="vegan" value="yes">Yes
+          <input type="radio" name="vegan" value="no">No
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
